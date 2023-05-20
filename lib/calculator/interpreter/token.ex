@@ -1,4 +1,4 @@
-defmodule Calculator.Token do
+defmodule Calculator.Interpreter.Token do
   defstruct type: nil, value: nil
 
   def new(type, value) do

@@ -14,9 +14,6 @@ defmodule Calculator do
       :world
 
   """
-  def eval(text) do
-    text
-    |> Interpreter.new()
-    |> Interpreter.exp()
-  end
+
+  defdelegate eval(string), to: Calculator.Interpreter
 end
