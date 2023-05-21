@@ -2,8 +2,8 @@ defmodule Calculator.Interpreter do
   alias Calculator.Interpreter.Parser
 
   def eval(text) do
-    text
-    |> Parser.new()
-    |> Parser.expr()
+    {:ok, pid} = Parser.start_link(text)
+
+    Parser.expr(pid)
   end
 end

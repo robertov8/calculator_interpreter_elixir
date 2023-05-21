@@ -26,5 +26,15 @@ defmodule CalculatorTest do
       assert Calculator.eval("10 - 1") == 9
       assert Calculator.eval("42 - 105") == -63
     end
+
+    # test "multiplication one digit" do
+    #   assert Calculator.eval("1 * 1") == 0
+    #   assert Calculator.eval("4 * 9") == -5
+    # end
+
+    # test "multiplication more digit" do
+    #   assert Calculator.eval("10 * 1") == 9
+    #   assert Calculator.eval("42 * 105") == -63
+    # end
   end
 end
